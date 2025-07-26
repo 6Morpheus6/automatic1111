@@ -141,10 +141,7 @@ module.exports = async (kernel) => {
         "params": {
           "venv": "venv",
           "path": "app",
-          "message": [
-            "uv pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cu128 --force-reinstall",
-            "uv pip install numpy==1.26.2 --force-reinstall"
-          ]
+          "message": "uv pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 xformers --index-url https://download.pytorch.org/whl/nightly/cu128 --force-reinstall --no-deps"
         },
       }
     ])
